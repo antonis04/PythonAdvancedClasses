@@ -16,7 +16,7 @@ def main():
         except ValueError:
             print("Podaj liczby całkowite.")
 
-    b = round((a + c) / 2)
+    b = int((a + c) / 2)
     wysokosci = [a, b, c]
     maks = max(wysokosci)
     szerokosc = 5
@@ -36,6 +36,7 @@ def main():
     for _ in wysokosci:
         dol += "+" + "-" * (szerokosc - 2) + "+"
     print(dol)
+    print("Wysokość słubka b to: " + str(b))
 
 if __name__ == "__main__":
     main()
